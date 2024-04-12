@@ -95,13 +95,14 @@ const Sidebar = () => {
                         <MenuLink item={item} key={item.title}/>
                     ))}
                 </li>
+                
             ))}
-
+            <li className={styles.iconLogout}><MdLogout/></li>
 
            </ul>
            
            <button className={styles.logout}>
-            <MdLogout/>
+             <MdLogout/>
             Cerrar Sesión</button>
            
            </div>

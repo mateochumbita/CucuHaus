@@ -8,18 +8,18 @@
 }
 
 
-.title{
-    color: var(--textSoft);
-    font-weight: bold;
-    text-transform: capitalize;
-    
-}
+.logo{
+    width: 30%; /* Ancho deseado para la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-right: 10px; /* Margen derecho */
 
+}
 
 .menu{
     display: flex;
     gap: 20px;
     align-items: center;
+   
 }
 
 
@@ -42,9 +42,10 @@
 
 
 .icons{
-    display: flex;
+    display: none;
     gap: 20px;
 }
+
 
 
 @media (max-width: 768px) {
@@ -52,8 +53,23 @@
        max-width: 100%;
       
     }
+
     .icons{
-        display: none;
+        display: flex;
+        gap: 20px;
 
     }
+    
+
+    .input{
+        max-width: 30%;
+    }
+
+    .logo{
+        width: 40px; /* Ancho deseado para la imagen */
+        height: 50%; /* Altura automática para mantener la proporción */
+        margin-right: 10px; /* Margen derecho */
+    
+    }
+   
 }

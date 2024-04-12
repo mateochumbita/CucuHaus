@@ -2,6 +2,7 @@
 .container{
     position:sticky;
     top: 40px;
+    background-color: blue;
 }
 
 .user{
@@ -64,11 +65,46 @@
 
 
 
-
+.iconLogout{
+    display: none;
+}
 
 @media (max-width: 768px) {
    .container{
     
-    
+    display: flex-column;
+   }
+
+   .userImage{
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    height: 50%;
+   }
+
+   .username{
+    display: none;
+   }
+   .userTitle{
+    display: none;
+   }
+
+
+   .cat{
+    display: none;
+   }
+
+
+   .logout{
+    display: none;
+   }
+   .iconLogout{
+     display: flex;
+       font-size: 25px;
+       
+       justify-content: center;
+
+       margin-left: 3px;
+
    }
 }
